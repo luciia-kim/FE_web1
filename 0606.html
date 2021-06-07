@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <title>WEB-1.1일차</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>WEB-1. 1일차 / 2021.06.06</h1>
+    <p><h3>web1-6. 기본은 TAG</h3>
+      열리는 태그는 <>안에 작성하고, 끝나는 부분에는 닫히는 태그에는 <>안에 /를 넣어 </>로 작성한다.<br>
+      <strong>strong</strong>: 굵은 글씨로 강조.<br>
+      <strong>u, ul</strong>: 밑줄 태그</p><br><br>
+
+    <p><h3>web1-7. 알고 가야할 기본태그 1</h3>
+      <strong>h#</strong>: 제목, heading 태그. h1부터 h6, 숫자가 클수록 사이즈는 작아짐.</p><br><br>
+
+    <p><h3>web1-9. 알고 가야할 기본태그 2</h3>
+      html은 줄 바꿈을 해서 코딩을 해도 화면에 출력되지 않음<br>
+      <strong>br</strong>: 줄바꿈, line breaker. 닫는 태그는 쓰지 않아도 된다.<br>
+      **참고로 실제 줄바꿈 그대로 반영되도록 하려면 preformatted text 태그인 pre를 쓰면 되는데, 줄바꿈 뿐 아니라 코드 창에 쓰인 탭 등 무시되는 문자도 출력되는 점을 주의해야 한다.<br>
+      <strong>p</strong>: 단락, paragraph 태그. br과 달리 닫히는 태그 써야 함.<br>
+      **css에서 태그 사이 여백을 나타내는 style 태그 margin
+      <p style="margin-top:40px;">바로 이게 예시인데, <u>p style="margin-top:40px;"</u> 이것은 이 단락 윗부분에 여백을 40px만큼 준다는 의미이다.</p>
+    </p><br><br>
+
+    <p><h3>web1-11. 알고 가야할 기본태그 3</h3>
+      <strong>b</strong>: 굵은 글씨, bold. strong 태그, css의 font-weight를 bold로 설정한 것과도 같음. b보다 strong을 권고함.<br>
+      <strong>i</strong>: 이태릭체, italic 태그, css의 font-style italic 과 같은 효과.<br>
+      <strong>img</strong>: 이미지 삽입 태그, src(이미지 경로) 속성(Attribute)을 통해 이미지 경로를 지정함. <u>닫는 태그 필요없음.</u><br><strong>img src="파일명.확장자" width="가로크기" height="세로크기"</strong>형태로 작성한다.</p><br><br>
+
+    <p><h3>내가 따로 정리하는 기본태그</h3>
+      <strong>div</strong>: 레이아웃을 나누는 division 태그: div, 가상 레이아웃 설계하며 css와 연동해서 쓴다.
+      <br><strong>span</strong>: div와 같은 기능, 차이점은 간단하게는 <strong>div는 줄바꿈 가능, span은 불가능.</strong> 자세히 보면 display 속성이 block이 아닌 inline이라는 점. css display 항목에서 세부정보 알 수 있음.<br>
+      <strong>table</strong>: 표를 만드는 태그. 행을 나타내는 tr, 열을 나타내는 td와 함께 사용. table-tr-td 순서.<br>
+      **최근에는 레이아웃 구성시 table말고 div 태그와 css 조합으로 사용함.<br>
+      <strong>form</strong>: 웹페이지의 입력양식 태그. 양식 입력/버튼 클릭 시 백엔드 서버에 양식 전달되어 정보 처리됨.<Br>
+        <strong>-함께 사용되는 태그</strong><br>
+        <ul>
+          <li>name: 폼의 이름</li>
+          <li>action: 데이터가 전송되는 백엔드 url</li>
+          <li>method: 전송방식 (get/post)</li></ul>
+
+        <strong>-input</strong>: 사용자가 작성할 데이터창
+        <strong>-type</strong>: 데이터 종류
+            <ul><li>text: 일반 문자</li>
+            <li>password: 비밀번호</li>
+            <li>button: 버튼</li>
+            <li>submit: 양식 제출용 버튼</li>
+            <li>reset: 양식 초기화 버튼</li>
+            <li>radio: 한 개만 선택할 수 있는 컴포넌트</li>
+            <li>checkbox: 다수를 선택할 수 있는 컴포넌트</li>
+            <li>file: 파일 업로드</li>
+            <li>hidden: 사용자에게 보이지 않는 숨은 요소</li></ul>
+      form 태그를 작성하는 방식은 다음과 같음: <strong>input type="타입 종류" name"데이터 이름" value="기본값" </strong></br><br>
+      <form><strong>닉네임을 설정하세요</strong><input type="text" name="name" value="닉네임 입력"></form></p><br><br>
+
+    <p><h3>web1-12. 부모자식과 목차</h3>
+      parent 태그 안에 있는 child 태그, 즉 부모-자식 관계 형성됨.<br><br>
+      <strong>li</strong>: 리스트를 만들 수 있는 list item 태그.<br>
+      <strong>ol, ul</strong>: li 태그의 부모태그. 번호가 있는 ordered list, 번호없이 모양만 있는 unordered list. 하나의 리스트 안에서 리스트 만들기도 가능<br><br>
+      즉, li은 ol이나 ul의 자식태그이고, ol과 ul은 li의 부모태그 관계 라는 것.</p><br><br>
+
+    <p><h3>web1-13. 문서의 구조</h3>
+      <strong>HTML</strong>: head와 body 태그를 담는 가장 상위의 태그.<br><br>
+      <strong>head</strong>: head 태그는 문서의 머리를 나타내는, 문서 정보가 담긴 태그.<br>
+      <strong>title</strong>: 웹페이지의 제목을 나타내는 태그로 브라우저 탭에서 확인할 수 있다. 검색엔진에서 보여지는 '이름'이기 때문에 잘 작성해야 한다.<br>
+      <strong>meta /</strong>: 보이지 않는 정보를 제공하는 데 쓰이는 태그. 우리가 작성한대로 보여질 수 있도록 우리가 만든 것 그대로 열 수 있게 하는 코드. <strong>meta charset=utf-8"</strong>이라고 써주면 된다.<br><br>
+      <strong>body</strong>: body 태그는 문서의 몸통, 브라우저 화면에 나타나는 것들을 의미. 아래서 설명하는 것들은 body 태그들임.<br>
+      그리고 관용적으로 html 태그 윗 줄에 <strong>!doctype html</strong> 이라는 태그를 써준다. 이는 페이지가 html로 만들어졌다는 것을 나타내기 위함.</p><br><br>
+
+    <p><h3>web1-14. HTML 태그의 제왕 링크(a)</h3>
+      <strong>a</strong>: 하이퍼 링크 태그,<br>
+      <strong>target</strong>은 링크를 여는 방법을 뜻하는 속성.<br>
+      target의 속성은, _self(현재페이지, 기본값), _blank(새 탭), 프레임 이름을 명시해서 사용하거나, iframe이 사용된 환경에서는 _parent(부모페이지)와 _top(최상위페이지)도 사용가능함.<br>
+      <strong>a href="이동할 링크">target /a</strong> 형태로 작성.</p><br><br>
+  </body>
+</html>
